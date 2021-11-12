@@ -17,7 +17,7 @@ public class FootballPlayer {
 
     private int age;
 
-    private char gender;
+    private String gender;
 
     private String nationality;
 
@@ -29,7 +29,7 @@ public class FootballPlayer {
 
 
 
-    public FootballPlayer(String firstName, String lastName, int age, char gender,String nationality, String teamPlayFor,int number){
+    public FootballPlayer(String firstName, String lastName, int age, String gender,String nationality, String teamPlayFor,int number){
 
         this.firstName = firstName;
         this.lastName = lastName;
@@ -43,6 +43,8 @@ public class FootballPlayer {
     public FootballPlayer(){
 
     }
+
+
 
     public int getNumber() {
         return number;
@@ -76,11 +78,11 @@ public class FootballPlayer {
         this.age = age;
     }
 
-    public char getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(char gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -109,12 +111,6 @@ public class FootballPlayer {
     }
 
 
-    public static FootballPlayer create(String name, String dept) {
-        FootballPlayer employee = new FootballPlayer();
-        employee.setFirstName(name);
-        employee.setLastName(dept);
-        return employee;
-    }
 
     @Override
     public String toString() {
